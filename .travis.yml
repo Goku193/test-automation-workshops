@@ -4,7 +4,7 @@ node_js:
 dist: trusty
 sudo: required
 addons:
-  chrome: stable
+  chrome: beta
 branches:
   only:
   - master
