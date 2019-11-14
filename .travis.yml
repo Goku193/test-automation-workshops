@@ -4,13 +4,14 @@ node_js:
 dist: trusty
 sudo: required
 addons:
-  chrome: beta
+  chrome: stable
 branches:
   only:
   - master
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod --base-href https://github.com/Goku193/test-automation-workshops
 - ng lint
-- ng test
+- ng test --watch=false --browers=ChromeHeadless
+- ng e2e
+- ng build --prod --base-href https://Goku193.github.io/test-automation-workshops
