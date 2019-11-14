@@ -12,6 +12,6 @@ before_script:
   - npm install -g @angular/cli
 script:
 - ng lint
-- ng test --watch=false --browers=ChromeHeadless
+- ng test --watch=false --browsers=ChromeHeadless
 - ng e2e
 - ng build --prod --base-href https://Goku193.github.io/test-automation-workshops
