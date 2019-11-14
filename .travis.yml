@@ -12,4 +12,5 @@ before_script:
   - npm install -g @angular/cli
 script:
 - ng build --prod --base-href https://github.com/Goku193/test-automation-workshops
+- ng lint
 - ng test
